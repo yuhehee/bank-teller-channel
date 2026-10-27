@@ -1,4 +1,4 @@
-# bank-teller-channel
+# Bank Teller Channel
 
 **Channel server** for a bank branch teller terminal demo.
 It provides REST APIs called by teller screens built with WebSquare.
