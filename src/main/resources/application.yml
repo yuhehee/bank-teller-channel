@@ -1,5 +1,5 @@
 server:
-  port: 8090
+  port: 8090 # avoid clash with WebSquare WRM server
   servlet:
     encoding:
       charset: UTF-8
@@ -10,6 +10,12 @@ spring:
     name: teller-channel
   jackson:
     time-zone: Asia/Seoul
+  web:
+    locale: ko # used when the request has no Accept-Language header
+  messages:
+    basename: messages
+    encoding: UTF-8
+    fallback-to-system-locale: false # unsupported language -> messages.properties, not the server OS languages
 
 logging:
   level:
